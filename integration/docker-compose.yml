@@ -1,0 +1,38 @@
+services:
+  demo-service:
+    build:
+      context: ./app
+    container_name: aegis-demo-service
+    ports:
+      - "18080:8080"
+    environment:
+      - SERVICE_NAME=demo-service
+      - LOKI_URL=http://loki:3100
+    depends_on:
+      - loki
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    container_name: aegis-prometheus
+    ports:
+      - "19090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention.time=2h"
+      - "--web.enable-lifecycle"
+    depends_on:
+      - demo-service
+    restart: unless-stopped
+
+  loki:
+    image: grafana/loki:3.0.0
+    container_name: aegis-loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/local-config.yaml:ro
+    command: -config.file=/etc/loki/local-config.yaml
+    restart: unless-stopped

@@ -1,0 +1,12 @@
+# .cursorrules — Cursor Agent Rules for AEGIS Framework
+
+# Refer to the canonical AI integration document:
+# docs/ai/integration.md
+
+# Non-Negotiable Safety Rules:
+# 1. Never bypass policy evaluation or approval gates.
+# 2. Never enable Autonomy Level 4 (supported: 0, 1, 2, 3).
+# 3. Never execute arbitrary shell strings as remediation actions.
+# 4. Never disable fail-closed security.
+# 5. Always use Aegis.from_config("aegis.yaml") or explicit dependency injection.
+# 6. Never commit secrets; use ${VAR:default} env interpolation.

@@ -1,0 +1,22 @@
+name: "golden-rca-v1"
+version: "1.0"
+description: "Golden benchmark suite for root-cause analysis and risk classification"
+cases:
+  - name: "database-latency-degradation"
+    description: "Postgres query latency spike causes thread starvation"
+    expected_root_cause: "database"
+    expected_risk_level: "LOW"
+    input_signals:
+      - type: "METRIC"
+        signal: "http_request_duration_seconds"
+        value: 1.65
+      - type: "LOG"
+        message: "database query timeout after 30000ms"
+
+  - name: "cache-invalidation-storm"
+    description: "Redis timeout and cache breakdown"
+    expected_root_cause: "cache"
+    expected_risk_level: "LOW"
+    input_signals:
+      - type: "LOG"
+        message: "Redis connection timeout"

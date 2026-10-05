@@ -1,0 +1,63 @@
+schema_version: "1.0.0"
+name: "aegis-ai"
+package: "aegis-ai"
+version: "0.1.0"
+category: "ai-reliability"
+license: "Apache-2.0"
+repository: "https://github.com/Livesh-L-28/AEGIS-Framework"
+
+purpose:
+  - "incident-investigation"
+  - "evidence-correlation"
+  - "causal-reasoning"
+  - "policy-enforcement"
+  - "controlled-remediation"
+  - "recovery-validation"
+  - "cryptographic-audit"
+
+integrations:
+  metrics:
+    - "prometheus"
+    - "in_memory"
+  logs:
+    - "loki"
+    - "in_memory"
+  traces:
+    - "opentelemetry"
+    - "in_memory"
+  infrastructure:
+    - "kubernetes"
+    - "in_memory"
+
+security:
+  fail_closed: true
+  approval_gates: true
+  autonomy_levels:
+    supported: [0, 1, 2, 3]
+    level_4_enabled: false
+  arbitrary_shell_remediation: false
+  llm_firewall: "llmfirewall-core"
+  reliability_adapter: "aireliability"
+
+installation:
+  pip: "pip install aegis-ai"
+
+entrypoint:
+  python: "from aegis import Aegis"
+  factory: "Aegis.from_config('aegis.yaml')"
+
+cli:
+  commands:
+    - "aegis init"
+    - "aegis init --example"
+    - "aegis doctor"
+    - "aegis demo"
+    - "aegis version"
+    - "aegis policy validate"
+    - "aegis evaluate --benchmark"
+
+documentation:
+  integration_contract: "docs/ai/integration.md"
+  quickstart: "docs/ai/quickstart.md"
+  vibe_coding: "docs/ai/vibe-coding-integration.md"
+  agents_instruction: "AGENTS.md"

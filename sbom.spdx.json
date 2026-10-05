@@ -1,0 +1,244 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "AEGIS-Framework-SBOM",
+  "documentNamespace": "https://spdx.org/spdxdocs/aegis-ai-0.1.0-sbom",
+  "creationInfo": {
+    "created": "2026-10-04T16:37:32.641962+00:00",
+    "creators": [
+      "Tool: AEGIS-Compliance-Auditor",
+      "Organization: AEGIS Framework Contributors"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-aegis-ai",
+      "name": "aegis-ai",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "https://github.com/Livesh-L-28/AEGIS-Framework",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2026 AEGIS Framework Contributors",
+      "description": "Open-source autonomous reliability engineering framework."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pydantic",
+      "name": "pydantic",
+      "versionInfo": "2.13.5",
+      "downloadLocation": "https://pypi.org/project/pydantic/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pyyaml",
+      "name": "pyyaml",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "https://pypi.org/project/PyYAML/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-httpx",
+      "name": "httpx",
+      "versionInfo": "0.28.1",
+      "downloadLocation": "https://pypi.org/project/httpx/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-llmfirewall-core",
+      "name": "llmfirewall-core",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "https://pypi.org/project/llmfirewall-core/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aireliability",
+      "name": "aireliability",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "https://pypi.org/project/aireliability/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pydantic-core",
+      "name": "pydantic-core",
+      "versionInfo": "2.46.5",
+      "downloadLocation": "https://pypi.org/project/pydantic-core/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-annotated-types",
+      "name": "annotated-types",
+      "versionInfo": "0.8.0",
+      "downloadLocation": "https://pypi.org/project/annotated-types/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-typing-extensions",
+      "name": "typing-extensions",
+      "versionInfo": "4.16.0",
+      "downloadLocation": "https://pypi.org/project/typing-extensions/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "PSF-2.0",
+      "licenseDeclared": "PSF-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-typing-inspection",
+      "name": "typing-inspection",
+      "versionInfo": "0.4.4",
+      "downloadLocation": "https://pypi.org/project/typing-inspection/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-httpcore",
+      "name": "httpcore",
+      "versionInfo": "1.0.9",
+      "downloadLocation": "https://pypi.org/project/httpcore/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-h11",
+      "name": "h11",
+      "versionInfo": "0.16.0",
+      "downloadLocation": "https://pypi.org/project/h11/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-certifi",
+      "name": "certifi",
+      "versionInfo": "2026.7.22",
+      "downloadLocation": "https://pypi.org/project/certifi/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MPL-2.0",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-idna",
+      "name": "idna",
+      "versionInfo": "3.20",
+      "downloadLocation": "https://pypi.org/project/idna/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-anyio",
+      "name": "anyio",
+      "versionInfo": "4.15.1",
+      "downloadLocation": "https://pypi.org/project/anyio/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-aegis-ai"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-pydantic"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-pyyaml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-httpx"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-llmfirewall-core"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aireliability"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-pydantic",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-pydantic-core"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-pydantic",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-annotated-types"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-pydantic",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-typing-extensions"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-pydantic",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-typing-inspection"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-httpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-httpcore"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-httpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-certifi"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-httpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-idna"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-httpx",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-anyio"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-httpcore",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-h11"
+    }
+  ]
+}

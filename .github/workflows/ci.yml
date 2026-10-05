@@ -1,0 +1,81 @@
+name: CI & Quality Assurance
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test & Lint (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,all]"
+
+      - name: Run Ruff check
+        run: |
+          ruff check .
+
+      - name: Run Mypy
+        run: |
+          mypy aegis
+
+      - name: Run Pytest
+        run: |
+          pytest -v
+
+      - name: Validate CLI & Doctor
+        run: |
+          aegis version
+          aegis doctor
+
+      - name: Run Examples
+        run: |
+          python examples/basic_investigation.py
+          python examples/custom_metrics_provider.py
+          python examples/custom_model_provider.py
+          python examples/custom_log_provider.py
+          python examples/remediation_with_approval.py
+          python examples/autonomy_policy.py
+          python examples/prometheus/query_metrics.py
+          python examples/opentelemetry/query_traces.py
+          python examples/kubernetes/manage_workload.py
+
+  package:
+    name: Package Build & Installation Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build sdist and wheel
+        run: |
+          pip install build
+          python -m build
+
+      - name: Clean install wheel
+        run: |
+          pip install dist/*.whl
+          aegis version
+          aegis doctor
