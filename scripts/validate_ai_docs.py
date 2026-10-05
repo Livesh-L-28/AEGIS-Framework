@@ -41,8 +41,8 @@ def main() -> int:
             data = yaml.safe_load(cap_file.read_text(encoding="utf-8"))
             if data.get("version") != aegis.__version__:
                 errors.append(f"capabilities.yaml version {data.get('version')} does not match aegis.__version__ {aegis.__version__}")
-            if data.get("package") != "aegis-ai":
-                errors.append(f"capabilities.yaml package {data.get('package')} != 'aegis-ai'")
+            if data.get("package") != "aegis-resilience":
+                errors.append(f"capabilities.yaml package {data.get('package')} != 'aegis-resilience'")
             sec = data.get("security", {})
             lvl4 = sec.get("level_4_enabled")
             if lvl4 is None:

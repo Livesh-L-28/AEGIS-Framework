@@ -11,7 +11,7 @@ AEGIS Framework is a developer-facing library for building autonomous reliabilit
 Install the framework via pip:
 
 ```bash
-pip install aegis-ai
+pip install aegis-resilience
 ```
 
 > **Note on Architecture Separation:**

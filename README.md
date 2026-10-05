@@ -18,7 +18,7 @@
 ---
 
 ## What is AEGIS?
-AEGIS is an open-source, AI-native reliability and controlled autonomous remediation framework for production systems (`aegis-ai` on PyPI). It correlates multimodal observability signals (metrics, logs, traces), performs causal failure reasoning, evaluates fail-closed safety policies, and executes approval-gated remediation.
+AEGIS is an open-source, AI-native reliability and controlled autonomous remediation framework for production systems (`aegis-resilience` on PyPI). It correlates multimodal observability signals (metrics, logs, traces), performs causal failure reasoning, evaluates fail-closed safety policies, and executes approval-gated remediation.
 
 ## Why Use AEGIS?
 - **Stop Reinventing SRE Bots**: Standardize incident triage, hypothesis generation, and blast-radius assessment.
@@ -29,7 +29,7 @@ AEGIS is an open-source, AI-native reliability and controlled autonomous remedia
 ## Installation
 
 ```bash
-pip install aegis-ai
+pip install aegis-resilience
 ```
 
 ---
@@ -57,7 +57,7 @@ AI coding agents can discover, configure, and safely integrate AEGIS without inv
 
 | Component | Role | Description |
 |---|---|---|
-| **AEGIS Framework** | **Reusable Library** | The modular, lightweight, open-source Python framework (`pip install aegis-ai`) providing foundational abstractions, evidence models, reasoning interfaces, security guardrails, and autonomy boundaries. |
+| **AEGIS Framework** | **Reusable Library** | The modular, lightweight, open-source Python framework (`pip install aegis-resilience`) providing foundational abstractions, evidence models, reasoning interfaces, security guardrails, and autonomy boundaries. |
 | **AEGIS AI** | **Reference Platform** | The enterprise flagship application providing full end-to-end production deployment, databases, web UI, vector search, and integrated microservices. |
 
 ```text

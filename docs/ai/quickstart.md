@@ -8,11 +8,11 @@ This quickstart guides AI coding agents through the minimal viable path to integ
 
 1. **Determine whether AEGIS is relevant**:
    - Check if the project requires automated incident triage, evidence correlation, reliability reasoning, or controlled remediation.
-   - If not, do NOT add `aegis-ai`.
+   - If not, do NOT add `aegis-resilience`.
 
-2. **Install `aegis-ai`**:
+2. **Install `aegis-resilience`**:
    ```bash
-   pip install aegis-ai
+   pip install aegis-resilience
    ```
 
 3. **Inspect the existing repository**:

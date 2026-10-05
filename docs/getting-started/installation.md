@@ -8,7 +8,7 @@
 Install the core framework from PyPI:
 
 ```bash
-pip install aegis-ai
+pip install aegis-resilience
 ```
 
 ## Optional Provider Extras
@@ -16,10 +16,10 @@ Install optional extras according to your infrastructure requirements:
 
 ```bash
 # Observability providers (Prometheus, Loki, OpenTelemetry HTTP clients)
-pip install aegis-ai[observability]
+pip install aegis-resilience[observability]
 
 # All supported integrations
-pip install aegis-ai[all]
+pip install aegis-resilience[all]
 ```
 
 ## Verifying Installation

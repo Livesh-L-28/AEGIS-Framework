@@ -9,7 +9,7 @@ AEGIS Framework is a modular library designed to provide developer primitives fo
 ## Installation
 
 ```bash
-pip install aegis-ai
+pip install aegis-resilience
 ```
 
 *(During development / pre-alpha stage, install locally in editable mode):*

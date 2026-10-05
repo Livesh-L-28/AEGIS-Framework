@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "aegis-ai"
+name = "aegis-resilience"
 version = "0.1.0"
 description = "Open-source autonomous reliability engineering framework for AI-powered incident investigation, reasoning, remediation, and reliability automation."
 readme = "README.md"

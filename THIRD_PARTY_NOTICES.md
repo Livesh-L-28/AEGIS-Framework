@@ -1,6 +1,6 @@
 # Third-Party Software Notices and Information
 
-This project, **AEGIS Framework** (`aegis-ai`), is licensed under the **Apache License, Version 2.0**.
+This project, **AEGIS Framework** (`aegis-resilience`), is licensed under the **Apache License, Version 2.0**.
 See [LICENSE](LICENSE) for the full license text.
 
 AEGIS integrates with and depends upon various open-source third-party software components.
@@ -10,7 +10,7 @@ This document provides notice of those dependencies, their licenses, how AEGIS i
 
 ## 1. Direct Python Runtime Dependencies
 
-The following open-source Python libraries are installed as direct dependencies of `aegis-ai`:
+The following open-source Python libraries are installed as direct dependencies of `aegis-resilience`:
 
 | Component | Version Constraint | License | Project URL | Distribution / Integration |
 |---|---|---|---|---|

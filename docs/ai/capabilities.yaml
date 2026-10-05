@@ -1,6 +1,6 @@
 schema_version: "1.0.0"
-name: "aegis-ai"
-package: "aegis-ai"
+name: "aegis-resilience"
+package: "aegis-resilience"
 version: "0.1.0"
 category: "ai-reliability"
 license: "Apache-2.0"
@@ -40,7 +40,7 @@ security:
   reliability_adapter: "aireliability"
 
 installation:
-  pip: "pip install aegis-ai"
+  pip: "pip install aegis-resilience"
 
 entrypoint:
   python: "from aegis import Aegis"

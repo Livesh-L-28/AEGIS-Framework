@@ -2,7 +2,7 @@
 
 ## Purpose
 
-AEGIS Framework (`aegis-ai` on PyPI) provides AI-assisted reliability engineering, multimodal evidence collection, causal reasoning, fail-closed policy enforcement, and controlled autonomous remediation.
+AEGIS Framework (`aegis-resilience` on PyPI) provides AI-assisted reliability engineering, multimodal evidence collection, causal reasoning, fail-closed policy enforcement, and controlled autonomous remediation.
 
 ## Canonical Instructions Before Modifying or Integrating
 
@@ -14,7 +14,7 @@ Before generating integration code or modifying AEGIS:
 ## Installation
 
 ```bash
-pip install aegis-ai
+pip install aegis-resilience
 ```
 
 ## Supported Entry Points

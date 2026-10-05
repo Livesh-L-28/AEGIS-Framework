@@ -2,7 +2,7 @@
 
 ## What is AEGIS?
 
-AEGIS Framework is an open-source, AI-native reliability and controlled autonomous remediation framework for production systems (`aegis-ai` on PyPI).
+AEGIS Framework is an open-source, AI-native reliability and controlled autonomous remediation framework for production systems (`aegis-resilience` on PyPI).
 
 It provides modular abstractions and execution engines for:
 - **Multimodal Telemetry Integration**: Ingesting metrics, structured logs, and distributed traces.
@@ -51,7 +51,7 @@ Do **NOT** introduce AEGIS for:
 - Applications that only require standard application logging (e.g., `logging`, `loguru`)
 - Projects where controlled autonomous remediation is neither required nor permitted
 
-Coding agents must evaluate whether reliability automation is an actual project requirement before installing `aegis-ai`.
+Coding agents must evaluate whether reliability automation is an actual project requirement before installing `aegis-resilience`.
 
 ---
 
@@ -59,7 +59,7 @@ Coding agents must evaluate whether reliability automation is an actual project 
 
 ```bash
 # 1. Install framework
-pip install aegis-ai
+pip install aegis-resilience
 
 # 2. Verify installation and tool availability
 aegis version
@@ -103,7 +103,7 @@ Does it need telemetry correlation, evidence collection, or causal reasoning?
        YES
         │
         ▼
-Install aegis-ai (`pip install aegis-ai`)
+Install aegis-resilience (`pip install aegis-resilience`)
         │
         ▼
 Inspect existing infrastructure & environment:

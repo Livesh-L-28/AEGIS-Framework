@@ -3,7 +3,7 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "AEGIS-Framework-SBOM",
-  "documentNamespace": "https://spdx.org/spdxdocs/aegis-ai-0.1.0-sbom",
+  "documentNamespace": "https://spdx.org/spdxdocs/aegis-resilience-0.1.0-sbom",
   "creationInfo": {
     "created": "2026-10-04T16:37:32.641962+00:00",
     "creators": [
@@ -13,8 +13,8 @@
   },
   "packages": [
     {
-      "SPDXID": "SPDXRef-Package-aegis-ai",
-      "name": "aegis-ai",
+      "SPDXID": "SPDXRef-Package-aegis-resilience",
+      "name": "aegis-resilience",
       "versionInfo": "0.1.0",
       "downloadLocation": "https://github.com/Livesh-L-28/AEGIS-Framework",
       "filesAnalyzed": false,
@@ -168,30 +168,30 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-Package-aegis-ai"
+      "relatedSpdxElement": "SPDXRef-Package-aegis-resilience"
     },
     {
-      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "spdxElementId": "SPDXRef-Package-aegis-resilience",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-pydantic"
     },
     {
-      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "spdxElementId": "SPDXRef-Package-aegis-resilience",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-pyyaml"
     },
     {
-      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "spdxElementId": "SPDXRef-Package-aegis-resilience",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-httpx"
     },
     {
-      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "spdxElementId": "SPDXRef-Package-aegis-resilience",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-llmfirewall-core"
     },
     {
-      "spdxElementId": "SPDXRef-Package-aegis-ai",
+      "spdxElementId": "SPDXRef-Package-aegis-resilience",
       "relationshipType": "DEPENDS_ON",
       "relatedSpdxElement": "SPDXRef-Package-aireliability"
     },

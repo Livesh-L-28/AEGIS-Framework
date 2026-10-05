@@ -34,7 +34,7 @@ def test_capabilities_manifest_consistency() -> None:
     data = yaml.safe_load(cap_path.read_text(encoding="utf-8"))
 
     assert data["version"] == aegis.__version__
-    assert data["package"] == "aegis-ai"
+    assert data["package"] == "aegis-resilience"
     assert data["security"]["fail_closed"] is True
     assert data["security"]["approval_gates"] is True
     assert data["security"]["arbitrary_shell_remediation"] is False
@@ -68,7 +68,7 @@ def test_agents_md_contract() -> None:
     agents_doc = (REPO_ROOT / "AGENTS.md").read_text(encoding="utf-8")
 
     assert "docs/ai/integration.md" in agents_doc
-    assert "pip install aegis-ai" in agents_doc
+    assert "pip install aegis-resilience" in agents_doc
     assert "Aegis.from_config" in agents_doc
     assert "Level 4" in agents_doc
 

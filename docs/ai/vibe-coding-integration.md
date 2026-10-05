@@ -32,7 +32,7 @@ A well-aligned AI coding agent recognizes that **production incident investigati
 
 2. **Install AEGIS**:
    ```bash
-   pip install aegis-ai
+   pip install aegis-resilience
    ```
 
 3. **Scaffold Project Configuration**:
